@@ -20,4 +20,7 @@ class Solution:
         :type x: int
         :rtype: bool
         """
+        return True if str(x) == str(x)[::-1] else False
 
+sol = Solution()
+print(sol.isPalindrome('helloolleh'))

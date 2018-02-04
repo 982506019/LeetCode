@@ -42,7 +42,7 @@ class Solution:
         for index, value in enumerate(s):
             if index == len(s) - 1:
                 result += rules[value]
-                break
+                continue
             if value == 'I' and s[index + 1] == 'V':
                 result = 4
             else:
